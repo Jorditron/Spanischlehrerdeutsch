@@ -864,7 +864,11 @@ margin-right:auto;
 	
 }
 
+#textoagrad1{
+font-size:25px;
+margin-left:220px;	
 	
+}
 	
 }	
 	
@@ -1522,7 +1526,12 @@ font-family: Grandview, Arial, Calibri;
 	
 }
 
+#textoagrad1{
 
+margin-left:220px;
+width:400px;
+	
+}
 
 
 }
@@ -1863,5 +1872,13 @@ width:200px;
 margin-left:10px;
 
 }
+
+#textoagrad1{
+
+margin-left:220px;
+width:250px;
+	
+}
+
 
 }
