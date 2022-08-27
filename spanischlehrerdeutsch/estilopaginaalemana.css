@@ -122,6 +122,7 @@ margin-left:auto;
 margin-right:auto;
 width:500px;
 line-height:1em;
+
 }
 
 #figurasmiley{
@@ -856,7 +857,13 @@ margin-top:250px;
 
 }
 
+#textowitze{
+margin-left:auto;
+margin-right:auto;
 	
+	
+}
+
 	
 	
 }	
@@ -1524,7 +1531,17 @@ font-family: Grandview, Arial, Calibri;
 
 @media (max-width:700px){
 	
-	
+.chistes{
+
+color:#8a8787;
+border: black 3px solid;
+margin-left:auto;
+margin-right:auto;
+width:400px;
+
+line-height:1em;
+
+}
 #banner{
 height:100px;
 line-height:30px;
@@ -1823,5 +1840,28 @@ font-family: Grandview, Arial, Calibri;
 	
 }
 
+
+#chiste1{
+height:200px;
+	
+}
+#parte1{
+	
+width:200px;	
+	
+	
+}
+
+#parte2{
+	
+width:150px;	
+margin-left:240px;
+	
+}
+#textowitze{
+width:200px;
+margin-left:10px;
+
+}
 
 }
