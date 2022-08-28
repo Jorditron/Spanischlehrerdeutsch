@@ -81,7 +81,7 @@ text-align:center;
 .titulo{
 	
 font-size:60px;
-
+padding-top:20px;
 font-family:Grandview, Arial, Calibri;	
 	
 }
@@ -200,25 +200,33 @@ width:100%;
 
 #datoscontacto{
 	
-margin-left:550px;	
 
+text-align:center;
 	
 }
 #puntitosazules{
-	
+text-align:center;
 position:absolute;	
-margin-top:50px;	
+margin-top:30px;	
+width:400px;
+
 }
 
 #punto1{
 position:absolute;
-margin-left:900px;	
+margin-left:520px;	
 
 }
 
 #punto2{
 	
-margin-left:460px;	
+margin-left:930px;	
+	
+}
+
+#telefono{
+	
+text-align:center;
 	
 }
 #foto1{
@@ -635,7 +643,7 @@ margin-left:200px;
 }
 #titulodanksagung{
 	
-	text-align:left;
+text-align:left;
 margin-left:200px;
 	
 }
@@ -646,7 +654,7 @@ margin-left:200px;
 }
 #titulospiele{
 	
-	text-align:left;
+text-align:left;
 margin-left:200px;
 	
 }
@@ -670,8 +678,6 @@ height:50px;
 width:100px;
 position:absolute;
 margin-left:70px;
-
-
 background-color:#77b978;
 border-radius:10%;
 color:#ffffff;
@@ -698,13 +704,17 @@ height:600px;
 padding-top:50px;	
 	
 }
+
+
+
+
 #footer{
 text-align:center;
 font-size:12px;	
 	
 	
 }
-@media (max-width:1410px){
+@media (max-width:1410px){ //*****************************************************/
 #banner{
 	
 height:100px;	
@@ -779,7 +789,7 @@ margin-top:320px;
 margin-left:170px;
 }
 #tweeter{
-	position:absolute;
+position:absolute;
 width:55px;
 height:50px;
 margin-top:320px;	
@@ -788,7 +798,7 @@ margin-left:225px;
 
 
 #whatsapp{
-	position:absolute;
+position:absolute;
 width:50px;
 height:50px;	
 margin-top:320px;
@@ -870,12 +880,46 @@ margin-left:220px;
 	
 }
 	
+	
+#textosobremi{
+
+margin-left:100px;
+
+
+}	
+
+#textocontacto{
+
+margin-left:100px;
+
+}	
+
+
+
+
+#punto1{
+margin-left:300px;	
+	
+}
+
+
+#punto2{
+	
+margin-left:800px;		
+	
+}
+#datoscontacto{
+	
+margin-left:400px;	
+	
+}
+
 }	
 	
 
 
 
-@media (max-width:1510px){
+@media (max-width:1510px){//*******************************************************/
 	
 body {
   font-size: 16px;
@@ -886,7 +930,7 @@ body {
 
 .titulo{
 	
-font-size:30px;
+font-size:40px;
 
 
 	
@@ -992,8 +1036,25 @@ margin-left:480px;
 width:300px;
 margin-top:280px;
 }
+#textoapcuarto{
 
+color:#6f6f6f;
+position:absolute;
+font-family: Grandview, Arial, Calibri;
+}
 
+#textoapartadocuarto{
+margin-left:270px;
+font-size:30px;
+width:490px;
+
+}
+
+#textocontacto{
+
+margin-left:90px;
+width:650px;
+}	
 #JordiSpanischlehrer{
 	
 padding-top:200px;
@@ -1017,19 +1078,8 @@ margin-left:300px;
 
 }
 ´
-#textoapcuarto{
+	
 
-color:#6f6f6f;
-position:absolute;
-font-family: Grandview, Arial, Calibri;
-}
-
-#textoapartadocuarto{
-margin-left:270px;
-font-size:30px;
-width:490px;
-
-}
 #frame1{
 	
 	
@@ -1206,11 +1256,58 @@ margin-top:250px;
 
 
 
+#textocontacto{
+
+width:800px;
 
 
 }
 
-@media (max-width:1090px){
+
+
+
+#punto1{
+
+margin-left:150px;
+
+}
+
+#punto2{
+position:absolute;
+margin-left:600px;	
+
+}
+
+
+#datoscontacto{
+	position:absolute;
+	margin-top:3px;
+	margin-left:130px;
+
+	
+}
+#telefono{
+margin-left:250px;	
+	
+}
+#email{	
+margin-left:240px;	
+	
+}
+#meswhasky{
+margin-left:240px;	
+	
+}
+#calendlywrapper{
+	
+margin-top:150px;	
+	
+}
+
+
+}
+
+@media (max-width:1090px){//***************************************************/
 	
 .titulo{
 	
@@ -1400,8 +1497,6 @@ height:1100px;
 }
 
 
-
-
 #jordicastellon{
 	
 width:200px;
@@ -1532,13 +1627,63 @@ margin-left:220px;
 width:400px;
 	
 }
+#textosobremi{
+	
+width:500px;	
+	
+}
+#textocontacto{
+
+width:600px;
 
 
 }
 
 
 
-@media (max-width:700px){
+
+#punto1{
+
+margin-left:40px;
+
+}
+
+#punto2{
+position:absolute;
+margin-left:450px;	
+
+}
+
+
+#datoscontacto{
+	position:absolute;
+	margin-top:3px;
+	margin-left:80px;
+
+	
+}
+#telefono{
+margin-left:100px;	
+	
+}
+#email{	
+margin-left:110px;	
+
+}
+#meswhasky{
+margin-left:90px;	
+
+}
+#calendlywrapper{
+	
+margin-top:150px;	
+	
+}
+}
+
+
+
+@media (max-width:700px){//*********************************************************/
 	
 .chistes{
 
@@ -1551,6 +1696,10 @@ width:400px;
 line-height:1em;
 
 }
+
+
+
+
 #banner{
 height:100px;
 line-height:30px;
@@ -1880,5 +2029,55 @@ width:250px;
 	
 }
 
+#textosobremi{
 
+margin-left:50px;
+width:350px;
+	
+}
+#textocontacto{
+
+width:350px;	
+
+}
+
+
+
+#punto1{
+
+margin-left:5px;
+
+}
+
+#punto2{
+position:absolute;
+margin-left:320px;	
+
+}
+
+
+#datoscontacto{
+	position:absolute;
+	margin-top:3px;
+	margin-left:0px;
+
+	width:300px;
+}
+#telefono{
+margin-left:15px;	
+font-size:15px;	
+}
+#email{	
+margin-left:60px;	
+font-size:15px;	
+}
+#meswhasky{
+margin-left:60px;	
+font-size:15px;	
+}
+#calendlywrapper{
+	
+margin-top:150px;	
+	
+}
 }
