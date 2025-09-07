@@ -12,7 +12,6 @@ spec:
         - www.muttersprachlicherspanischlehrer.de
         - www.muttersprachlicherspanischlehrer.eu
         - www.spanischlehrerdeutsch.com
-      secretName: tls-www-spanischlehrerdeutsch-jhbpk
   rules:
     - host: www.muttersprachlicherspanischlehrer.de
       http:
