@@ -10,7 +10,7 @@ spec:
         - www.muttersprachlicherspanischlehrer.de
         - www.muttersprachlicherspanischlehrer.eu
         - www.spanischlehrerdeutsch.com
-      secretName: tls-www-spanischlehrerdeutsch
+      secretName: tls-www-spanischlehrerdeutsch-t4d5h
   rules:
     - host: www.muttersprachlicherspanischlehrer.de
       http:
