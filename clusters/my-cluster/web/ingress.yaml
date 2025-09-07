@@ -3,14 +3,13 @@ kind: Ingress
 metadata:
   name: web-spanischlehrerdeutsch-ingress
   namespace: production
+  annotations:
+    cert-manager.io/cluster-issuer: letsencrypt-production
 spec:
   ingressClassName: public
   tls:
     - hosts:
         - www.muttersprachlicherspanischlehrer.de
-        - www.muttersprachlicherspanischlehrer.eu
-        - www.spanischlehrerdeutsch.com
-      secretName: tls-www-spanischlehrerdeutsch-t4d5h
   rules:
     - host: www.muttersprachlicherspanischlehrer.de
       http:
