@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: web-spanischlehrerdeutsch
+  namespace: production
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: web-spanischlehrerdeutsch
+  template:
+    metadata:
+      labels:
+        app: web-spanischlehrerdeutsch
+    spec:
+      containers:
+        - name: nginx
+          image: ghcr.io/JordiTron/web-spanischlehrerdeutsch:latest
+          ports:
+            - containerPort: 80
