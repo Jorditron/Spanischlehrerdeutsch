@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
         - name: nginx
-          image: ghcr.io/JordiTron/web-spanischlehrerdeutsch:latest
+          image: ghcr.io/jorditron/web-spanischlehrerdeutsch:latest
           ports:
             - containerPort: 80

@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      IMAGE_NAME: ghcr.io/JordiTron/web-spanischlehrerdeutsch
+      IMAGE_NAME: ghcr.io/jorditron/web-spanischlehrerdeutsch
       IMAGE_TAG: latest
       DEPLOYMENT_FILE: clusters/my-cluster/web/deployment.yaml
 
