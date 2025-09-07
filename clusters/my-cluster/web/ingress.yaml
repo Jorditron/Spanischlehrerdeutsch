@@ -1,0 +1,26 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: web-spanischlehrerdeutsch-ingress
+  namespace: production
+  annotations:
+    cert-manager.io/cluster-issuer: "letsencrypt-production"
+spec:
+  ingressClassName: public
+  tls:
+    - hosts:
+        - www.muttersprachlicherspanischlehrer.de
+        - www.muttersprachlicherspanischlehrer.eu
+        - www.spanischlehrerdeutsch.com
+      secretName: tls-www-spanischlehrerdeutsch
+  rules:
+    - host: www.muttersprachlicherspanischlehrer.de
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: web-spanischlehrerdeutsch
+                port:
+                  number: 80
