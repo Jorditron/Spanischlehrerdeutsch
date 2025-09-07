@@ -5,6 +5,7 @@ metadata:
   namespace: production
   annotations:
     cert-manager.io/cluster-issuer: letsencrypt-production
+    nginx.ingress.kubernetes.io/ssl-redirect: "true"
 spec:
   ingressClassName: public
   tls:
