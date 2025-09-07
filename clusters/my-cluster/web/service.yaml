@@ -5,8 +5,7 @@ metadata:
   namespace: production
 spec:
   selector:
-    matchLabels:
-      app: web-spanischlehrerdeutsch
+    app: web-spanischlehrerdeutsch
   ports:
     - port: 80
       targetPort: 80
