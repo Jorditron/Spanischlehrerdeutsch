@@ -11,6 +11,7 @@ spec:
   tls:
     - hosts:
         - www.muttersprachlicherspanischlehrer.de
+      secretName: tls-www-spanischlehrerdeutsch
   rules:
     - host: www.muttersprachlicherspanischlehrer.de
       http:
