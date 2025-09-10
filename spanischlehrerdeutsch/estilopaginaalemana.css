@@ -1308,12 +1308,20 @@ margin-top:150px;
 }
 
 @media (max-width:1090px){//***************************************************/
-	
+	body{
+		with:auto;
+	}
 .titulo{
 	
 font-size:25px;
 
 
+	
+}
+	.palabrascabecera{
+	
+	width:300px;
+	
 	
 }
 .subtitulo{
@@ -2081,3 +2089,4 @@ margin-top:150px;
 	
 }
 }
+
