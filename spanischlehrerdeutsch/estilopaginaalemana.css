@@ -1311,19 +1311,21 @@ margin-top:150px;
 	body{
 		with:auto;
 	}
-.titulo{
-	
-font-size:25px;
 
-
-	
-}
 	.palabrascabecera{
 	
 	width:300px;
 	
 	
 }
+.titulo{
+	
+font-size:20px;
+
+
+	
+}
+	
 .subtitulo{
 	
 font-size:20px;
@@ -2089,4 +2091,5 @@ margin-top:150px;
 	
 }
 }
+
 
