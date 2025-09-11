@@ -7,4 +7,4 @@ spec:
   image: ghcr.io/jorditron/web-spanischlehrerdeutsch
   interval: 1m
   secretRef:
-    name: ghcr-credentials
+    name: ghcr-jorditron-credentials
