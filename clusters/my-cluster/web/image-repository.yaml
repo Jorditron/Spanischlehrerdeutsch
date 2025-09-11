@@ -1,0 +1,10 @@
+apiVersion: image.toolkit.fluxcd.io/v1beta2
+kind: ImageRepository
+metadata:
+  name: web-spanischlehrerdeutsch
+  namespace: flux-system
+spec:
+  image: ghcr.io/jorditron/web-spanischlehrerdeutsch
+  interval: 1m
+  secretRef:
+    name: ghcr-credentials

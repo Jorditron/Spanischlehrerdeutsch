@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - main
+    tags:
+      - 'v*.*.*'   # trigger also on version tags like v1.0.5
 
 jobs:
   build-and-deploy:
@@ -11,8 +13,6 @@ jobs:
 
     env:
       IMAGE_NAME: ghcr.io/jorditron/web-spanischlehrerdeutsch
-      IMAGE_TAG: latest
-      DEPLOYMENT_FILE: clusters/my-cluster/web/deployment.yaml
 
     steps:
       # 1. Check out repository
@@ -27,25 +27,32 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
-      # 3. Build Docker image
+      # 3. Determine version tag
+      - name: Set version
+        id: vars
+        run: |
+          if [[ "${GITHUB_REF}" == refs/tags/* ]]; then
+            VERSION=${GITHUB_REF#refs/tags/v}
+          else
+            VERSION=0.0.${GITHUB_RUN_NUMBER}
+          fi
+          echo "version=$VERSION" >> $GITHUB_OUTPUT
+
+      # 4. Build Docker image
       - name: Build Docker image
         run: |
-          docker build -t $IMAGE_NAME:$IMAGE_TAG .
+          docker build -t $IMAGE_NAME:${{ steps.vars.outputs.version }} -t $IMAGE_NAME:latest .
 
-      # 4. Push Docker image
+      # 5. Push Docker image
       - name: Push Docker image
         run: |
-          docker push $IMAGE_NAME:$IMAGE_TAG
+          docker push $IMAGE_NAME:${{ steps.vars.outputs.version }}
+          docker push $IMAGE_NAME:latest
 
-      # 5. Update Deployment.yaml with new image
-      - name: Update Deployment image
-        run: |
-          sed -i "s|image: .*|image: $IMAGE_NAME:$IMAGE_TAG|" $DEPLOYMENT_FILE
-
-      # 6. Commit and push changes to repo (Flux will sync automatically)
-      - name: Commit updated Deployment
-        uses: stefanzweifel/git-auto-commit-action@v4
+      # 6. Clean up old images (keep last 10)
+      - name: Delete old container images
+        uses: actions/delete-package-versions@v4
         with:
-          commit_message: "Update web-spanischlehrerdeutsch image to $IMAGE_TAG"
-          branch: main
-          file_pattern: $DEPLOYMENT_FILE
+          package-name: web-spanischlehrerdeutsch
+          package-type: container
+          min-versions-to-keep: 10
