@@ -2,7 +2,7 @@ apiVersion: image.toolkit.fluxcd.io/v1beta2
 kind: ImageRepository
 metadata:
   name: web-spanischlehrerdeutsch
-  namespace: flux-system
+  namespace: spanischlehrerdeutsch-production
 spec:
   image: ghcr.io/jorditron/web-spanischlehrerdeutsch
   interval: 1m
