@@ -7,9 +7,9 @@ spec:
   interval: 1m
   sourceRef:
     kind: GitRepository
-    name: flux-system
+    name: web-spanischlehrerdeutsch
   secretRef:
-    name: github-jorditron-pat 
+    name: github-jorditron-pat   
   git:
     checkout:
       ref:
