@@ -17,6 +17,12 @@ spec:
       author:
         name: FluxCD Bot
         email: jorditron@users.noreply.github.com
+      messageTemplate: |
+        chore(images): update tags
+        {{range .Updated.Images -}}
+        - {{.}}
+        {{end}}
+        [skip ci]
     push:
       branch: main
   update:
