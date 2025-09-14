@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: nginx
-          image: ghcr.io/jorditron/web-spanischlehrerdeutsch:0.0.1411 # {"$imagepolicy": "spanischlehrerdeutsch-production:web-spanischlehrerdeutsch"}
+          image: ghcr.io/jorditron/web-spanischlehrerdeutsch:0.0.1412 # {"$imagepolicy": "spanischlehrerdeutsch-production:web-spanischlehrerdeutsch"}
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 80
